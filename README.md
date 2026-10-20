@@ -1,5 +1,9 @@
 # 📦 DeliverMe — On-Demand Courier Dispatch & Fleet Routing Platform
 
+<p align="center">
+  <img src="assets/branding/logo.jpg" alt="DeliverMe Logo" width="160" style="border-radius: 24px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);" />
+</p>
+
 
 <p align="center">
   <strong>Full-Stack Real-Time Delivery Dispatching, Dual-Role Mobile Client & Serverless Cloud Routing</strong>

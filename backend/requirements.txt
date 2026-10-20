@@ -1,0 +1,10 @@
+firebase-functions>=0.6.0
+firebase-admin
+twilio
+google-cloud-storage
+googlemaps
+stripe
+google-cloud-tasks
+
+
+google-cloud-secret-manager

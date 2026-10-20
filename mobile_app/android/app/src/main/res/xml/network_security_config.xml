@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow HTTPS to all domains (default behaviour) -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Trust system CAs for all HTTPS connections -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Firebase Storage and GCS endpoints -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">firebasestorage.googleapis.com</domain>
+        <domain includeSubdomains="true">storage.googleapis.com</domain>
+        <domain includeSubdomains="true">googleapis.com</domain>
+        <domain includeSubdomains="true">firebaseapp.com</domain>
+        <domain includeSubdomains="true">firebase.google.com</domain>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+
+    <!-- Vercel backend -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">vercel.app</domain>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

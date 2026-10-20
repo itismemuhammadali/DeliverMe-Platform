@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- External files dir - image_picker saves camera photos here -->
+    <external-files-path name="my_images" path="Pictures" />
+    <!-- Cache dir - some plugins use this -->
+    <cache-path name="cache" path="." />
+    <!-- External cache dir -->
+    <external-cache-path name="external_cache" path="." />
+    <!-- Files dir -->
+    <files-path name="files" path="." />
+    <!-- External storage for legacy Android -->
+    <external-path name="external" path="." />
+</paths>

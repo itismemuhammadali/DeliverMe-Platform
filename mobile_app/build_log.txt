@@ -1,0 +1,8 @@
+No devices found yet. Checking for wireless devices...
+
+No supported devices found with name or id matching 'E546276E-9E99-4B5E-BB03-10FF1BCB5196'.
+
+The following devices were found:
+220233L2G (wireless) (mobile) • adb-RS5DJZL7DMV4FMD6-5EVCzz._adb-tls-connect._tcp • android-arm    • Android 11 (API 30)
+macOS (desktop)               • macos                                             • darwin-arm64   • macOS 26.5 25F71 darwin-arm64
+Chrome (web)                  • chrome                                            • web-javascript • Google Chrome 149.0.7827.115

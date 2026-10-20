@@ -1,0 +1,68 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Customers can only read/write their own data
+    match /customers/{customerId} {
+      allow read, write: if request.auth != null && request.auth.uid == resource.data.firebase_uid;
+      allow create: if request.auth != null;
+    }
+    
+    // Drivers can only read/write their own data
+    match /drivers/{driverId} {
+      allow read, write: if request.auth != null && request.auth.uid == resource.data.firebase_uid;
+      allow create: if request.auth != null;
+    }
+    
+    // Deliveries - customers can read their own, drivers can read assigned or requested
+    match /deliveries/{deliveryId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+    
+    // Notifications - only for assigned driver/customer
+    match /notifications/{notificationId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+    
+    // Tracking sessions - only for involved parties
+    match /tracking_sessions/{sessionId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+    
+    // Driver locations - history
+    match /driver_locations/{locationId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+    
+    // OTPs - only for verification
+    match /otps/{phone} {
+      allow read, write: if true; // OTPs need to be accessible for verification before full auth
+    }
+    
+    // Connected users - only own data
+    match /connected_users/{userId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // User rooms - only for members
+    match /user_rooms/{roomId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Counters - read only for clients
+    match /counters/{counter} {
+      allow read: if request.auth != null;
+      allow write: if false;  // Only Cloud Functions can write
+    }
+    
+    // Delivery History
+    match /delivery_history/{historyId} {
+      allow read: if request.auth != null;
+      allow write: if false; // Only Cloud Functions
+    }
+  }
+}

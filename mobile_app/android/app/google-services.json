@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "648361658719",
+    "project_id": "delivermee-12c26",
+    "storage_bucket": "delivermee-12c26.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648361658719:android:ff17c3b5fe3254da088eea",
+        "android_client_info": {
+          "package_name": "com.delivermee.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-aMZUlqHBmmhHBolum72-OHmK1BBiBXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

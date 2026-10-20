@@ -1,0 +1,10 @@
+{
+  "name": "delivermee-frontend",
+  "version": "1.0.0",
+  "description": "DeliverMee Flutter Web Application",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Flutter web app already built. Using pre-built files from build/web'",
+    "start": "echo 'Use Vercel to deploy'"
+  }
+}

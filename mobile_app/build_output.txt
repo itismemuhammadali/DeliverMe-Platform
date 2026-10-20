@@ -1,0 +1,15 @@
+The following plugins do not support Swift Package Manager for ios:
+  - permission_handler_apple
+  - location
+  - google_maps_flutter_ios
+  - geocoding_ios
+  - stripe_ios
+This will become an error in a future version of Flutter. Please contact the plugin maintainers to request Swift Package Manager adoption.
+The following plugins do not support Swift Package Manager for macos:
+  - location
+This will become an error in a future version of Flutter. Please contact the plugin maintainers to request Swift Package Manager adoption.
+Warning: Building for device with codesigning disabled. You will have to manually codesign before deploying to device.
+Building com.delivermee.app for device (ios)...
+To ensure your app continues to launch on upcoming iOS versions, UIScene lifecycle support will soon be required. Please see https://flutter.dev/to/uiscene-migration for the migration guide.
+
+Running pod install...                                          

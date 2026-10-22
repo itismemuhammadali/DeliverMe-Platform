@@ -10,6 +10,9 @@
 </p>
 
 <p align="center">
+  <a href="https://apps.apple.com/ca/app/delivermee/id6744903022">
+    <img src="https://img.shields.io/badge/App_Store-Production_Live-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Apple App Store" />
+  </a>
   <a href="https://play.google.com/store/apps/details?id=com.delivermee.app">
     <img src="https://img.shields.io/badge/Google_Play-Production_Live-34A853?style=for-the-badge&logo=googleplay&logoColor=white" alt="Google Play Store" />
   </a>
@@ -26,8 +29,9 @@
 
 > **Production Application Verification:**
 > 
-> The core logistics dispatch engine, dual-role Flutter architecture, and live Stripe payment settlement system in this repository are actively deployed in production on the **Google Play Store**:
-> - 📱 **Live Production Build:** [`com.delivermee.app` on Google Play](https://play.google.com/store/apps/details?id=com.delivermee.app)
+> The core logistics dispatch engine, dual-role Flutter architecture, and live Stripe payment settlement system in this repository are actively deployed in production on both the **Apple App Store** and the **Google Play Store**:
+> - 🍏 **Apple App Store (iOS):** [DeliverMee on App Store (`id6744903022`)](https://apps.apple.com/ca/app/delivermee/id6744903022)
+> - 🤖 **Google Play Store (Android):** [`com.delivermee.app` on Google Play](https://play.google.com/store/apps/details?id=com.delivermee.app)
 > 
 > *Notice: This repository consolidates the full-stack logistics architecture titled **DeliverMe** (Flutter Dual-Role Mobile App + Python 3.12 Firebase Cloud Functions backend). All route calculation matrices, state-machine dispatch lifecycles, and payment integrations were designed and authored by **Muhammad Ali** as Principal Mobile Architect.*
 
